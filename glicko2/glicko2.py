@@ -187,3 +187,6 @@ class Player:
         
         """
         self._preRatingRD()
+
+    def __repr__(self):
+        return "Rating={}, rd={}, vol={}".format(round(self.rating, 2), round(self.rd, 2), round(self.vol, 2))
